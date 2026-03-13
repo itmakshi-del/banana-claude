@@ -1,4 +1,4 @@
-# Contributing to Nano Banana Pro 2
+# Contributing to Claude Banana
 
 Contributions are welcome! Here's how to help.
 

@@ -33,7 +33,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [2.0.0] - 2026-03-13
 
 ### Added
-- Initial release of Nano Banana Pro 2
+- Initial release of Claude Banana
 - Creative Director pipeline with 6-component Reasoning Brief
 - 8 domain modes, MCP integration, post-processing pipeline
 - Batch variations, multi-turn chat, prompt inspiration

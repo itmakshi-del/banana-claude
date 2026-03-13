@@ -1,8 +1,8 @@
 <!-- Updated: 2026-03-13 -->
 
-![Nano Banana Pro 2](screenshots/cover-image.jpeg)
+![Claude Banana](screenshots/cover-image.jpeg)
 
-# Nano Banana Pro 2
+# Claude Banana
 
 AI image generation skill for Claude Code where **Claude acts as Creative Director** using Google's Gemini Nano Banana models.
 

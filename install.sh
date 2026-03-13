@@ -1,5 +1,5 @@
 #!/bin/bash
-# Nano Banana Pro 2 — Install Script
+# Claude Banana — Install Script
 # Installs the skill to ~/.claude/skills/ for Claude Code
 #
 # Usage:
@@ -41,7 +41,7 @@ if [[ ! -d "$SOURCE_DIR" ]]; then
 fi
 
 # Install skill
-info "Installing Nano Banana Pro 2 skill..."
+info "Installing Claude Banana skill..."
 mkdir -p "$SKILL_DIR"
 cp -r "$SOURCE_DIR"/* "$SKILL_DIR/"
 chmod +x "$SKILL_DIR/scripts/"*.py 2>/dev/null || true
