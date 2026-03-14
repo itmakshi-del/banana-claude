@@ -65,6 +65,9 @@ def _lookup_cost(model, resolution, batch=False):
         print(f"Warning: Unknown model '{model}', using 3.1 Flash pricing", file=sys.stderr)
         model_pricing = PRICING["gemini-3.1-flash-image-preview"]
 
+    valid_resolutions = {"512", "1K", "2K", "4K"}
+    if resolution not in valid_resolutions:
+        print(f"Warning: Unknown resolution '{resolution}', using 1K pricing", file=sys.stderr)
     cost = model_pricing.get(resolution, model_pricing.get("1K", 0.039))
     if batch:
         cost *= BATCH_DISCOUNT
@@ -83,7 +86,7 @@ def cmd_log(args):
         "model": args.model,
         "res": args.resolution,
         "cost": cost,
-        "prompt": args.prompt,
+        "prompt": args.prompt[:100],
     }
 
     ledger["entries"].append(entry)

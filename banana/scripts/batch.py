@@ -52,22 +52,29 @@ def main():
     rows = []
     errors = []
 
-    with open(csv_path, "r", newline="") as f:
-        reader = csv.DictReader(f)
-        for i, row in enumerate(reader, start=2):  # Line 2+ (1 is header)
-            prompt = row.get("prompt", "").strip()
-            if not prompt:
-                errors.append(f"Row {i}: missing prompt")
-                continue
+    try:
+        with open(csv_path, "r", newline="") as f:
+            reader = csv.DictReader(f)
+            if not reader.fieldnames or "prompt" not in reader.fieldnames:
+                print(json.dumps({"error": True, "message": "CSV must have a 'prompt' column header"}))
+                sys.exit(1)
+            for i, row in enumerate(reader, start=2):  # Line 2+ (1 is header)
+                prompt = row.get("prompt", "").strip()
+                if not prompt:
+                    errors.append(f"Row {i}: missing prompt")
+                    continue
 
-            rows.append({
-                "row": i,
-                "prompt": prompt,
-                "ratio": row.get("ratio", "").strip() or DEFAULT_RATIO,
-                "resolution": row.get("resolution", "").strip() or DEFAULT_RESOLUTION,
-                "model": row.get("model", "").strip() or DEFAULT_MODEL,
-                "preset": row.get("preset", "").strip() or None,
-            })
+                rows.append({
+                    "row": i,
+                    "prompt": prompt,
+                    "ratio": row.get("ratio", "").strip() or DEFAULT_RATIO,
+                    "resolution": row.get("resolution", "").strip() or DEFAULT_RESOLUTION,
+                    "model": row.get("model", "").strip() or DEFAULT_MODEL,
+                    "preset": row.get("preset", "").strip() or None,
+                })
+    except (csv.Error, UnicodeDecodeError) as e:
+        print(json.dumps({"error": True, "message": f"Failed to parse CSV: {e}"}))
+        sys.exit(1)
 
     if errors:
         print("Validation errors:")
