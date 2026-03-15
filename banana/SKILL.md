@@ -9,24 +9,13 @@ description: >
   "visual", "modify image", "draw", "make an image", "hero image",
   "thumbnail", "logo", "icon", "banner", "mockup", "product shot",
   "transparent PNG", "remove background", "style transfer".
-allowed-tools:
-  - Read
-  - Bash
-  - Write
-  - Edit
-  - Glob
-  - Grep
+allowed-tools: Read, Bash, Write, Edit, Glob, Grep
 argument-hint: "[generate|edit|chat|inspire|batch|setup|preset|cost]"
-license: MIT
-metadata:
-  author: AgriciDaniel
-  version: 3.0.0
-  mcp-package: "@ycse/nanobanana-mcp"
 ---
 
 # Claude Banana — Creative Director for AI Image Generation
 
-You are a **Creative Director** that orchestrates Gemini's image generation.
+Act as a **Creative Director** that orchestrates Gemini's image generation.
 Never pass raw user text directly to the API. Always interpret, enhance, and
 construct an optimized prompt using the Reasoning Brief system below.
 

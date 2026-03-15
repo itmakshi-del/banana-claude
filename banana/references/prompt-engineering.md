@@ -185,13 +185,13 @@ to Gemini's natural language format:
 | `--chaos 50` | Describe variety: "unexpected, surreal composition" |
 | `--no trees` | Positive framing: "open clearing with no vegetation" |
 | `(word:1.5)` weight | Descriptive emphasis: "prominently featuring [word]" |
-| `8K, masterpiece, ultra-detailed` | Remove — these are filler; describe actual detail instead |
+| `8K, masterpiece, ultra-detailed` | Keep only "ultra-realistic, high resolution"; remove the rest |
 | Comma-separated tags | Expand into descriptive narrative paragraphs |
 | `shot on Hasselblad` | Keep — camera specs work well in Gemini |
 
 ## Common Prompt Mistakes
 
-1. **Keyword stuffing** — "8K, masterpiece, best quality, ultra-detailed" adds nothing
+1. **Keyword stuffing** — stacking generic quality terms ("8K, masterpiece, best quality") adds nothing. Use only "ultra-realistic, high resolution" at the end
 2. **Tag lists** — Gemini wants prose, not "red car, sunset, mountain, cinematic"
 3. **Missing lighting** — The single biggest quality differentiator
 4. **No composition direction** — Results in generic centered framing
@@ -360,7 +360,7 @@ branding, high resolution, dramatic contrast.
 6. **Add platform context** — "Instagram aesthetic", "commercial photography for advertising"
 7. **Describe textures** — "crinkle-textured", "metallic silver", "frosted glass"
 8. **Use action verbs** — "mid-run", "posing confidently", "captured mid-stride"
-9. **End with quality anchors** — "ultra-detailed", "high resolution", "8K" (these DO help on Gemini despite being filler on other models)
+9. **End with "ultra-realistic, high resolution"** — these two specific anchors help on Gemini. Avoid generic stacking like "8K, masterpiece, best quality" which adds no value
 10. **For products, say "prominently displayed"** — ensures the product/logo isn't hidden
 
 ### Anti-Patterns (What NOT to Do)

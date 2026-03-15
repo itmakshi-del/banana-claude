@@ -11,7 +11,7 @@ which convert   # ImageMagick 6 (fallback)
 which ffmpeg    # For video/animation
 ```
 
-On this system: ImageMagick is installed via apt.
+Install ImageMagick if not present: `sudo apt install imagemagick` (Debian/Ubuntu) or `brew install imagemagick` (macOS).
 
 ## Common Operations
 

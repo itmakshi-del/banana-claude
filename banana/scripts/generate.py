@@ -24,6 +24,10 @@ DEFAULT_RATIO = "1:1"
 OUTPUT_DIR = Path.home() / "Documents" / "nanobanana_generated"
 API_BASE = "https://generativelanguage.googleapis.com/v1beta/models"
 
+VALID_RATIOS = {"1:1", "16:9", "9:16", "4:3", "3:4", "2:3", "3:2",
+                "4:5", "5:4", "1:4", "4:1", "1:8", "8:1", "21:9"}
+VALID_RESOLUTIONS = {"512", "1K", "2K", "4K"}
+
 
 def generate_image(prompt, model, aspect_ratio, resolution, api_key,
                    thinking_level=None, image_only=False):
@@ -115,6 +119,14 @@ def main():
     parser.add_argument("--image-only", action="store_true", help="Return image only (no text)")
 
     args = parser.parse_args()
+
+    if args.aspect_ratio not in VALID_RATIOS:
+        print(json.dumps({"error": True, "message": f"Invalid aspect ratio '{args.aspect_ratio}'. Valid: {sorted(VALID_RATIOS)}"}))
+        sys.exit(1)
+
+    if args.resolution not in VALID_RESOLUTIONS:
+        print(json.dumps({"error": True, "message": f"Invalid resolution '{args.resolution}'. Valid: {sorted(VALID_RESOLUTIONS)}"}))
+        sys.exit(1)
 
     api_key = args.api_key or os.environ.get("GOOGLE_AI_API_KEY") or os.environ.get("GOOGLE_API_KEY")
     if not api_key:

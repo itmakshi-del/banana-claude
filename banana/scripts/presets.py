@@ -78,7 +78,7 @@ def cmd_create(args):
     """Create a new preset."""
     _ensure_dir()
     path = _preset_path(args.name)
-    if path.exists() and not getattr(args, "force", False):
+    if path.exists():
         print(f"Error: Preset '{args.name}' already exists. Use a different name.", file=sys.stderr)
         sys.exit(1)
 

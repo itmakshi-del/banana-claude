@@ -87,21 +87,10 @@ def main():
     # Cost estimate
     total_cost = sum(estimate_cost(r["model"], r["resolution"]) for r in rows)
 
-    print(f"Batch Plan: {len(rows)} images")
-    print(f"Estimated cost: ${total_cost:.3f}")
-    print()
-    print("Plan:")
-    for r in rows:
-        cost = estimate_cost(r["model"], r["resolution"])
-        preset_note = f" [preset: {r['preset']}]" if r["preset"] else ""
-        print(f"  [{r['row']}] {r['ratio']} {r['resolution']} ${cost:.3f}{preset_note}")
-        print(f"       {r['prompt'][:80]}{'...' if len(r['prompt']) > 80 else ''}")
-
     # Output structured JSON for Claude to consume
-    print()
-    print("--- JSON Plan ---")
     print(json.dumps({"rows": rows, "total_count": len(rows),
-                       "estimated_cost": round(total_cost, 3)}, indent=2))
+                       "estimated_cost": round(total_cost, 3),
+                       "errors": errors}, indent=2))
 
 
 if __name__ == "__main__":
