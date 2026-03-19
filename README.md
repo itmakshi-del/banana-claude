@@ -1,6 +1,6 @@
 <!-- Updated: 2026-03-19v2 -->
 
-![Banana Claude](screenshots/cover-image.png)
+![Banana Claude](screenshots/cover-image.webp)
 
 # Banana Claude
 
@@ -107,7 +107,7 @@ Claude will ask about your brand, select the right domain mode (Cinema, Product,
 
 ## How It Works
 
-![Creative Director Pipeline](screenshots/pipeline-flow.png)
+![Creative Director Pipeline](screenshots/pipeline-flow.webp)
 
 ## What Makes This Different
 
@@ -123,7 +123,7 @@ Claude will ask about your brand, select the right domain mode (Cinema, Product,
 
 ## The 5-Component Prompt Formula
 
-![Prompt Formula](screenshots/reasoning-brief.png)
+![Prompt Formula](screenshots/reasoning-brief.webp)
 
 Instead of sending "a cat in space" to Gemini, Claude constructs:
 
@@ -141,7 +141,7 @@ Instead of sending "a cat in space" to Gemini, Claude constructs:
 
 ## Domain Modes
 
-![Domain Modes](screenshots/domain-modes.png)
+![Domain Modes](screenshots/domain-modes.webp)
 
 | Mode | Best For | Example |
 |------|----------|---------|
