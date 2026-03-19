@@ -97,13 +97,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.0.0] - 2026-03-13
 
 ### Added
-- Initial release of Claude Banana
+- Initial release of Banana Claude
 - Creative Director pipeline with 6-component Reasoning Brief
 - 8 domain modes, MCP integration, post-processing pipeline
 - Batch variations, multi-turn chat, prompt inspiration
 - Install script with validation
 
-[1.4.0]: https://github.com/AgriciDaniel/claude-banana/releases/tag/v1.4.0
-[1.3.0]: https://github.com/AgriciDaniel/claude-banana/releases/tag/v1.3.0
-[1.2.0]: https://github.com/AgriciDaniel/claude-banana/releases/tag/v1.2.0
-[1.0.0]: https://github.com/AgriciDaniel/claude-banana/releases/tag/v1.0.0
+[1.4.0]: https://github.com/AgriciDaniel/banana-claude/releases/tag/v1.4.0
+[1.3.0]: https://github.com/AgriciDaniel/banana-claude/releases/tag/v1.3.0
+[1.2.0]: https://github.com/AgriciDaniel/banana-claude/releases/tag/v1.2.0
+[1.0.0]: https://github.com/AgriciDaniel/banana-claude/releases/tag/v1.0.0

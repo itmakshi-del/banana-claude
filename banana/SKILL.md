@@ -8,7 +8,7 @@ metadata:
   mcp-package: "@ycse/nanobanana-mcp"
 ---
 
-# Claude Banana -- Creative Director for AI Image Generation
+# Banana Claude -- Creative Director for AI Image Generation
 
 ## MANDATORY -- Read these before every generation
 

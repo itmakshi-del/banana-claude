@@ -1,4 +1,4 @@
-# Contributing to Claude Banana
+# Contributing to Banana Claude
 
 Contributions are welcome! Here's how to help.
 

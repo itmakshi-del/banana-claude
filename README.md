@@ -1,8 +1,8 @@
 <!-- Updated: 2026-03-19 -->
 
-![Claude Banana](screenshots/cover-image.png)
+![Banana Claude](screenshots/cover-image.png)
 
-# Claude Banana
+# Banana Claude
 
 AI image generation skill for Claude Code where **Claude acts as Creative Director** using Google's Gemini Nano Banana models.
 
@@ -36,21 +36,21 @@ Unlike simple API wrappers, Claude interprets your intent, selects domain expert
 ### Recommended Install (Unix/macOS/Linux)
 
 ```bash
-git clone --depth 1 https://github.com/AgriciDaniel/claude-banana.git
-bash claude-banana/install.sh
+git clone --depth 1 https://github.com/AgriciDaniel/banana-claude.git
+bash banana-claude/install.sh
 ```
 
 <details>
 <summary>One-liner (curl)</summary>
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/AgriciDaniel/claude-banana/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/AgriciDaniel/banana-claude/main/install.sh | bash
 ```
 
 Prefer to review the script before running?
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/AgriciDaniel/claude-banana/main/install.sh > install.sh
+curl -fsSL https://raw.githubusercontent.com/AgriciDaniel/banana-claude/main/install.sh > install.sh
 cat install.sh        # review
 bash install.sh       # run when satisfied
 rm install.sh
@@ -61,8 +61,8 @@ rm install.sh
 ### With MCP Setup
 
 ```bash
-git clone --depth 1 https://github.com/AgriciDaniel/claude-banana.git
-cd claude-banana
+git clone --depth 1 https://github.com/AgriciDaniel/banana-claude.git
+cd banana-claude
 ./install.sh --with-mcp YOUR_API_KEY
 ```
 
@@ -89,7 +89,7 @@ claude
 
 Claude will ask about your brand, select the right domain mode (Cinema, Product, Portrait, Editorial, UI, Logo, Landscape, Infographic, Abstract), construct a detailed prompt with lighting and composition, set the right aspect ratio, and generate.
 
-![Claude Banana in action](screenshots/claude-banana-skillcommand.gif)
+![Banana Claude in action](screenshots/banana-claude-skillcommand.gif)
 
 ## Commands
 
@@ -194,8 +194,8 @@ Instead of sending "a cat in space" to Gemini, Claude constructs:
 ## Uninstall
 
 ```bash
-git clone --depth 1 https://github.com/AgriciDaniel/claude-banana.git
-bash claude-banana/install.sh --uninstall
+git clone --depth 1 https://github.com/AgriciDaniel/banana-claude.git
+bash banana-claude/install.sh --uninstall
 ```
 
 ## Contributing

@@ -1,13 +1,13 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
 type: software
-title: "Claude Banana"
+title: "Banana Claude"
 abstract: "AI image generation skill for Claude Code -- Creative Director powered by Gemini"
 authors:
   - family-names: "Daniel"
     given-names: "Agrici"
     alias: "AgriciDaniel"
-repository-code: "https://github.com/AgriciDaniel/claude-banana"
+repository-code: "https://github.com/AgriciDaniel/banana-claude"
 url: "https://www.skool.com/ai-marketing-hub-pro"
 license: MIT
 version: "1.4.0"

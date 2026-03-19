@@ -1,10 +1,10 @@
-# CLAUDE.md -- Development context for claude-banana
+# CLAUDE.md -- Development context for banana-claude
 
 This file is read by Claude Code when working inside this repository.
 
 ## What this repo is
 
-`claude-banana` is a Claude Code skill that enables AI image generation
+`banana-claude` is a Claude Code skill that enables AI image generation
 using Google's Gemini Nano Banana models via MCP. Claude acts as a Creative
 Director: it interprets intent, selects domain expertise, constructs
 optimized prompts, and orchestrates Gemini API calls.
